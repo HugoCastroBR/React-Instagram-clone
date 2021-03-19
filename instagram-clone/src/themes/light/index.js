@@ -1,3 +1,4 @@
 export const LightTheme = {
-    mainColor: "#FFF"
+    mainColor: "#FFF",
+    secondaryColor:  "#FAFAFA"
 }

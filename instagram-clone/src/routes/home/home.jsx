@@ -3,9 +3,9 @@ import Page from './../../components/page/index';
 
 
 
-function Home({name}) {
+function Home({name,theme}) {
     return(
-        <Page>
+        <Page theme={theme}>
             <h1>{name}</h1>
         </Page>
     )
