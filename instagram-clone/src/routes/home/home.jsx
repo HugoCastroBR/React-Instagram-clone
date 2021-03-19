@@ -1,8 +1,13 @@
 import React from 'react';
+import Page from './../../components/page/index';
 
-function Home() {
+
+
+function Home({name}) {
     return(
-        <h1></h1>
+        <Page>
+            <h1>{name}</h1>
+        </Page>
     )
 }
 
