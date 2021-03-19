@@ -1,8 +1,14 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import { Routes } from "./routes";
 
 function App() {
     return(
-		<h1>opa</h1>
+		<main>
+			<BrowserRouter>
+				<Routes/>
+			</BrowserRouter>
+		</main>
 	);
 }
 
