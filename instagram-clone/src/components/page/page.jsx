@@ -15,7 +15,7 @@ function Page({children,theme}){
     `;
 
     const SectionContainer = styled.div`
-        background-color: ${theme.mainColor};
+        background-color: ${theme.secondaryColor};
         width: 100vw;
         height: 100vh;
         max-width: 935px;
