@@ -26,22 +26,22 @@ function Home({name,theme}) {
         display: flex;
         flex-direction: column;
     `
-
+    /// todo separar os posts em pastas diferentes e etc
     return(
         <Page theme={theme}>
             <PageMainPostsContainer>
 
-                <MainContentContainer size={[null, 118]} theme={theme}>
+                <MainContentContainer size={[null, 118]} margin={[24,0,0,0]} theme={theme}>
                     <StoriesContainer/>
                 </MainContentContainer>
 
-                <MainContentContainer size={[null, 1000]} theme={theme}>
+                <MainContentContainer size={[null, 1000]} margin={[24,24,0,0]} theme={theme}>
                     
                 </MainContentContainer>
-                <MainContentContainer size={[null, 1000]} theme={theme}>
+                <MainContentContainer size={[null, 1000]} margin={[24,24,0,0]} theme={theme}>
                     
                 </MainContentContainer>
-                <MainContentContainer size={[null, 1000]} theme={theme}>
+                <MainContentContainer size={[null, 1000]} margin={[24,24,0,0]} theme={theme}>
                     
                 </MainContentContainer>
             </PageMainPostsContainer>
