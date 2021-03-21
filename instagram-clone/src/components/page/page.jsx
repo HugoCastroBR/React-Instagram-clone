@@ -12,6 +12,7 @@ function Page({children,theme}){
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     `;
 
     const SectionContainer = styled.div`

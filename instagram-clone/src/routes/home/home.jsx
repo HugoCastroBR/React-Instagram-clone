@@ -2,6 +2,7 @@ import React from 'react';
 import Page from './../../components/page/index';
 import  styled  from 'styled-components';
 import MainContentContainer from './../../components/MainContentContainer/';
+import StoriesContainer from './../../components/StoriesContainer/index';
 
 
 
@@ -9,9 +10,7 @@ function Home({name,theme}) {
 
     
     
-    const StoriesContainer = styled.div`
-        height: 60px;
-    `
+    
 
     const InfosContainer = styled.div`
         margin-top: 24px;
@@ -26,24 +25,24 @@ function Home({name,theme}) {
         display: flex;
         flex-direction: column;
     `
+
+
     /// todo separar os posts em pastas diferentes e etc
+
     return(
         <Page theme={theme}>
             <PageMainPostsContainer>
 
                 <MainContentContainer size={[null, 118]} margin={[24,0,0,0]} theme={theme}>
-                    <StoriesContainer/>
+                    <StoriesContainer>
+                        
+                    </StoriesContainer>
                 </MainContentContainer>
 
                 <MainContentContainer size={[null, 1000]} margin={[24,24,0,0]} theme={theme}>
                     
                 </MainContentContainer>
-                <MainContentContainer size={[null, 1000]} margin={[24,24,0,0]} theme={theme}>
-                    
-                </MainContentContainer>
-                <MainContentContainer size={[null, 1000]} margin={[24,24,0,0]} theme={theme}>
-                    
-                </MainContentContainer>
+
             </PageMainPostsContainer>
                 
             <InfosContainer size={[293, 56]}>

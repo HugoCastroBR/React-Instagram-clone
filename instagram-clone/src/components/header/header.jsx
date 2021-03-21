@@ -18,6 +18,7 @@ const MainHeader = styled.header`
     justify-content: center;
     align-items: center;
     border-bottom: 0.5px solid #e1e1e1;
+    
 `;
 
 const Header_container = styled.div`
@@ -28,6 +29,7 @@ const Header_container = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 `;
 
 const Header__item = styled.div`
