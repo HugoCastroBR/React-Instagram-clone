@@ -4,8 +4,8 @@ import styled from "styled-components";
 const StoryItem = styled.div`
     width: 72px;
     height: 84px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
     display: flex;
     flex-direction: column;
     justify-content: center;
