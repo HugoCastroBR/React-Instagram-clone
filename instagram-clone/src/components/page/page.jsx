@@ -3,10 +3,8 @@ import Header from '../header';
 import styled  from 'styled-components';
 
 
-
-function Page({children,theme}){
-    const PageContainer = styled.div`
-        background-color: ${theme.secondaryColor};
+const PageContainer = styled.div`
+        background-color: ${(props) => props.theme.secondaryColor};
         width: 100vw;
         min-height: 100vh;
         display: flex;
@@ -16,7 +14,7 @@ function Page({children,theme}){
     `;
 
     const SectionContainer = styled.div`
-        background-color: ${theme.secondaryColor};
+        background-color: ${(props) => props.theme.secondaryColor};
         width: 100vw;
         min-height: 100vh;
         max-width: 935px;
@@ -27,11 +25,12 @@ function Page({children,theme}){
     `;
 
 
-
+function Page({children,theme}){
+    
     return(
-        <PageContainer>
+        <PageContainer theme={theme}>
             <Header/>
-            <SectionContainer>
+            <SectionContainer theme={theme}>
                 {children}
             </SectionContainer>
         </PageContainer>

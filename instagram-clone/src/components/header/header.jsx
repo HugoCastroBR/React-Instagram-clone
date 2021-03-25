@@ -21,7 +21,7 @@ const MainHeader = styled.header`
     
 `;
 
-const Header_container = styled.div`
+const Headercontainer = styled.div`
     width: 100vw;
     height: 54px;
     max-width: 935px;
@@ -32,13 +32,13 @@ const Header_container = styled.div`
     
 `;
 
-const Header__item = styled.div`
+const Headeritem = styled.div`
     width: calc(100% / 3);
     display: flex;
     justify-content: ${(props) => props.align || "flex-start"};
 `;
 
-const Header__Button = styled.div`
+const HeaderButton = styled.div`
     width: ${(props) => `${props.size[0]}px` || "22px"};
     height: ${(props) => `${props.size[1]}px` || "22px"};
     margin-right: 0px;
@@ -51,7 +51,7 @@ const Header__Button = styled.div`
 
 
 
-const Search__Input = styled.input`
+const SearchInput = styled.input`
     padding-top: 8px;
     padding-left: 12px;
     padding-right: 12px;
@@ -72,7 +72,7 @@ const Search__Input = styled.input`
     
 `;
 
-const Search__Label__Container = styled.div`
+const SearchLabelContainer = styled.div`
     top: 12px;
     z-index: 2;
     position: absolute;
@@ -86,7 +86,7 @@ const Search__Label__Container = styled.div`
     align-items: center;
     border-radius: 3px;
 
-    ${Search__Input}:hover & {
+    ${SearchInput}:hover & {
         border: 1px solid red;
         background-color: red;
     }
@@ -105,31 +105,31 @@ function Header() {
     return (
         <div>
             <MainHeader>
-                <Header_container>
-                    <Header__item>
+                <Headercontainer>
+                    <Headeritem>
                         <img src={InstagramWrittenLogo} alt="" />
-                    </Header__item>
+                    </Headeritem>
 
-                    <Header__item align="center">
+                    <Headeritem align="center">
                         <form action="">
-                            <Search__Label__Container>
-                                <label htmlFor="Search__Input">
+                            <SearchLabelContainer>
+                                <label htmlFor="SearchInput">
                                     <img src={LoupeLogo} width="12px" alt="" />
                                 </label>
-                                <label htmlFor="Search__Input">Pesquisar</label>
-                            </Search__Label__Container>
-                            <Search__Input id="Search__Input" type="text" />
+                                <label htmlFor="SearchInput">Pesquisar</label>
+                            </SearchLabelContainer>
+                            <SearchInput id="SearchInput" type="text" />
                         </form>
-                    </Header__item>
+                    </Headeritem>
 
-                    <Header__item align="flex-end">
-                        <Header__Button size={[22, 22]} image={HomeLogo} />
-                        <Header__Button size={[22, 22]} image={MessageLogo} />
-                        <Header__Button size={[22, 22]} image={CompassLogo} />
-                        <Header__Button size={[22, 22]} image={HeartLogo} />
-                        <Header__Button size={[22, 22]} image={DefaultUser} />
-                    </Header__item>
-                </Header_container>
+                    <Headeritem align="flex-end">
+                        <HeaderButton size={[22, 22]} image={HomeLogo} />
+                        <HeaderButton size={[22, 22]} image={MessageLogo} />
+                        <HeaderButton size={[22, 22]} image={CompassLogo} />
+                        <HeaderButton size={[22, 22]} image={HeartLogo} />
+                        <HeaderButton size={[22, 22]} image={DefaultUser} />
+                    </Headeritem>
+                </Headercontainer>
             </MainHeader>
         </div>
     );
