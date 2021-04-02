@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import UserImage from "../UserImage";
+
 
 const StoryItem = styled.div`
     width: 72px;
@@ -10,7 +12,7 @@ const StoryItem = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    cursor: pointer;
     h3 {
         display: block;
         height: 6px;
@@ -30,22 +32,13 @@ const StoryItemImgContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    img {
-        border-radius: 50px;
-        width: 52px;
-        height: 52px;
-        background-color: blue;
-    }
 `;
 
 function StorieItem({imgSrc, user}) {
     return (
         <StoryItem>
             <StoryItemImgContainer>
-                <img
-                    src={imgSrc}
-                    alt=""
-                />
+                <UserImage src={imgSrc} size={52}/>
             </StoryItemImgContainer>
             <h3>{user}</h3>
         </StoryItem>

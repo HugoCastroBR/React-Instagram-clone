@@ -3,6 +3,7 @@ import Page from './../../components/page/index';
 import  styled  from 'styled-components';
 import MainContentContainer from './../../components/MainContentContainer/';
 import StoriesContainer from './../../components/StoriesContainer/index';
+import AsideInfos from './components/AsideInfos';
 
 const InfosContainer = styled.div`
     margin-top: 24px;
@@ -19,9 +20,6 @@ const InfosContainer = styled.div`
 `
 
 function Home({name,theme}) {
-
-    
-    
 
 
     /// todo separar os posts em pastas diferentes e etc
@@ -43,7 +41,7 @@ function Home({name,theme}) {
             </PageMainPostsContainer>
                 
             <InfosContainer size={[293, 56]}>
-
+                <AsideInfos/>
             </InfosContainer>
         </Page>
     )
