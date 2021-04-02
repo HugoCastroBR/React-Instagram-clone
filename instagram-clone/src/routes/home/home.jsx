@@ -37,9 +37,9 @@ function Home({name,theme}) {
                 </MainContentContainer>
 
                 <MainContentContainer size={[null, 1000]} margin={[24,24,0,0]} theme={theme}>
-                    
+                
                 </MainContentContainer>
-
+        
             </PageMainPostsContainer>
                 
             <InfosContainer size={[293, 56]}>

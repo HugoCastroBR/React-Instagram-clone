@@ -38,16 +38,16 @@ const StoryItemImgContainer = styled.div`
     }
 `;
 
-function StorieItem() {
+function StorieItem({imgSrc, user}) {
     return (
         <StoryItem>
             <StoryItemImgContainer>
                 <img
-                    src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fHJhbmRvbXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+                    src={imgSrc}
                     alt=""
                 />
             </StoryItemImgContainer>
-            <h3>Teste do teste</h3>
+            <h3>{user}</h3>
         </StoryItem>
     );
 }
