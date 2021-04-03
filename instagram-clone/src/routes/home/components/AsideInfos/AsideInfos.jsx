@@ -59,7 +59,7 @@ function AsideInfos(){
                         <span>Hugo</span>
                     </div>
                 </MainInfos>
-                    <a href="">Mudar</a>
+                    <a href="/">Mudar</a>
             </YourUserInfos>
         </AsideInfosContainer>
     )
