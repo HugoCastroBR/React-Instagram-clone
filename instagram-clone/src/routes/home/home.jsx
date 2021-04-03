@@ -9,7 +9,7 @@ const InfosContainer = styled.div`
     margin-top: 24px;
     width: ${props => `${props.size[0]?props.size[0]:614}px`};
     height: ${props => props.size?`${props.size[1]}px`:`auto`};
-    background-color: gray;
+    background-color: transparent;
     max-height: 70vh;
     `
 
