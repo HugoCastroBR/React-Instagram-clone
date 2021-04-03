@@ -8,8 +8,9 @@ import AsideInfos from './components/AsideInfos';
 const InfosContainer = styled.div`
     margin-top: 24px;
     width: ${props => `${props.size[0]?props.size[0]:614}px`};
-    height: ${props => `${props.size[1]}px`};
+    height: ${props => props.size?`${props.size[1]}px`:`auto`};
     background-color: gray;
+    max-height: 70vh;
     `
 
     const PageMainPostsContainer = styled.div`
@@ -28,19 +29,19 @@ function Home({name,theme}) {
         <Page theme={theme}>
             <PageMainPostsContainer>
 
-                <MainContentContainer size={[null, 118]} margin={[24,0,0,0]} theme={theme}>
+                <MainContentContainer size={[false, 118]} margin={[24,0,0,0]} theme={theme}>
                     <StoriesContainer>
                         
                     </StoriesContainer>
                 </MainContentContainer>
 
-                <MainContentContainer size={[null, 1000]} margin={[24,24,0,0]} theme={theme}>
+                <MainContentContainer size={[false, 1000]} margin={[24,24,0,0]} theme={theme}>
                 
                 </MainContentContainer>
         
             </PageMainPostsContainer>
                 
-            <InfosContainer size={[293, 56]}>
+            <InfosContainer size={[293, false]}>
                 <AsideInfos/>
             </InfosContainer>
         </Page>

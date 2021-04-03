@@ -78,9 +78,7 @@ function StorieCarousel() {
     const [stories_number, setStories_number] = useState(0);
     const Stories_numberVar = 5 // numero de stories_number a passar
     // <StorieItem imgSrc=""/>
-    let StorieRender = `
-    
-    `
+
     if(stories_number === 0){
         return (
             <StorieCarouselContainer>
@@ -88,7 +86,7 @@ function StorieCarousel() {
                 <StoriesCarouselContainer next={stories_number}>
                     {/* Espaço para 7 Stories_number */}
                     {StoriesList.map(element => {
-                        return <StorieItem imgSrc={element.img} user={element.user}/>
+                        return <StorieItem imgSrc={element.img} user={element.user} key={element.id}/>
                     })}
                 </StoriesCarouselContainer>
                 <CarouselControlButton

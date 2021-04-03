@@ -12,14 +12,17 @@ const AsideInfosContainer = styled.div`
 
 `
 
+const YourUserInfos = styled.div`
+    
+`
 
 
 function AsideInfos(){
     return(
         <AsideInfosContainer>
-            <div>
+            <YourUserInfos>
                 <UserImage size='56' src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fHJhbmRvbXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt=""/>
-            </div>
+            </YourUserInfos>
         </AsideInfosContainer>
     )
 }
